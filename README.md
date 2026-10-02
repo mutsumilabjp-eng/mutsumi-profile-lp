@@ -10,10 +10,10 @@ Mutsumi profile / hub LP.
 - Production branch: `main`
 
 ## Deploy
-Push to `main` → GitHub Actions → Wrangler → Cloudflare Workers.
+Push to `main` → Cloudflare Workers Builds (Git integration, build command: none, deploy command: `npx wrangler deploy`).
 
-Required GitHub Actions secrets:
-- `CLOUDFLARE_API_TOKEN`
-- `CLOUDFLARE_ACCOUNT_ID`
+Account: Mutsumi.lab.jp (`b62fc18…`). URL: https://mutsumi.app1008.workers.dev/
+
+Files listed in `.assetsignore` are not published.
 
 Do not deploy this LP from another brand's repository or Cloudflare account.
