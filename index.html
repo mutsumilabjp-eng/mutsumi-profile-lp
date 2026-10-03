@@ -22,22 +22,25 @@
       radial-gradient(35rem 25rem at 108% 34%,rgba(162,178,186,.13),transparent 60%),
       radial-gradient(32rem 22rem at 22% 92%,rgba(126,149,165,.09),transparent 58%)}
     body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.2;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.06'/%3E%3C/svg%3E")}
+    #watercolorFx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:.82;mix-blend-mode:multiply}
+    main,footer{position:relative;z-index:1}
     a{color:inherit} img,video{display:block;width:100%} .wrap{width:min(1120px,calc(100% - 40px));margin:auto}
     header{position:relative;z-index:4;padding:24px 0}.head{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:15px}.brand{font:600 14px/1 var(--serif);letter-spacing:.09em}.head a{font-size:12px;text-decoration:none;color:var(--muted);border-bottom:1px solid currentColor;padding-bottom:2px}
     .hero{min-height:calc(100svh - 70px);display:grid;grid-template-columns:1.04fr .96fr;gap:7vw;align-items:center;padding:42px 0 84px}.eyebrow{font-size:11px;letter-spacing:.18em;color:var(--muted);text-transform:uppercase}.hero h1{font:500 clamp(42px,6.5vw,92px)/1.16 var(--serif);letter-spacing:-.04em;margin:20px 0 30px;max-width:12ch}.hero h1 em{font-style:normal;color:var(--blue)}.lead{max-width:36em;font-size:15px;color:#505452}.scrolllink{display:inline-flex;gap:12px;align-items:center;margin-top:34px;text-decoration:none;font-size:12px;letter-spacing:.06em}.scrolllink:after{content:"↓";font-size:15px}.hero-visual{position:relative}.hero-visual img{aspect-ratio:1/1;object-fit:cover;border-radius:2px;filter:saturate(.82) contrast(.97)}.hero-visual:before{content:"";position:absolute;inset:-22px 16px 22px -16px;border:1px solid rgba(98,124,145,.32);z-index:-1}.hero-caption{display:flex;justify-content:space-between;gap:20px;margin-top:10px;font-size:10px;color:var(--muted)}
     section{padding:110px 0}.section-head{display:grid;grid-template-columns:140px 1fr;gap:24px;align-items:start;margin-bottom:48px}.section-no{font-size:10px;color:var(--muted);letter-spacing:.13em;padding-top:10px}.section-head h2{font:500 clamp(32px,5vw,62px)/1.22 var(--serif);letter-spacing:-.03em;margin:0;max-width:14ch}.section-copy{max-width:40em;margin:18px 0 0;color:var(--muted);font-size:14px}
     .handoff{border-top:1px solid var(--line)}.handoff-list{display:grid;grid-template-columns:repeat(2,1fr);gap:0 70px}.handoff-item{display:grid;grid-template-columns:42px 1fr;gap:18px;padding:25px 0;border-bottom:1px solid var(--line)}.handoff-num{font:italic 18px/1 var(--serif);color:var(--blue2)}.handoff-item h3{font:500 21px/1.45 var(--serif);margin:0 0 6px}.handoff-item p{font-size:13px;color:var(--muted);margin:0}
-    .motion{background:rgba(255,255,255,.28);border-block:1px solid rgba(37,38,38,.1)}.motion-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,380px);gap:7vw;align-items:center}.motion-grid>div:last-child{justify-self:center;width:100%}.motion-copy h2{font:500 clamp(34px,5vw,65px)/1.22 var(--serif);letter-spacing:-.035em;margin:12px 0 22px}.motion-copy p{font-size:14px;color:var(--muted);max-width:30em}.video-frame{position:relative;background:#0d101a;overflow:hidden;width:100%;aspect-ratio:9/16;border:1px solid rgba(37,38,38,.12)}.video-frame video{display:block;width:100%;height:100%;object-fit:contain}.video-note{font-size:10px;color:var(--muted);margin-top:10px}.video-frame:after{content:"CODE → MOTION";position:absolute;left:14px;bottom:12px;color:rgba(255,255,255,.72);font-size:9px;letter-spacing:.16em}
+    .motion{background:rgba(255,255,255,.22);border-block:1px solid rgba(37,38,38,.1)}.motion-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(200px,240px);gap:8vw;align-items:center}.motion-grid>div:last-child{justify-self:center;width:100%;max-width:240px}.motion-copy h2{font:500 clamp(34px,5vw,65px)/1.22 var(--serif);letter-spacing:-.035em;margin:12px 0 22px}.motion-copy p{font-size:14px;color:var(--muted);max-width:30em}.video-frame{position:relative;background:#0d101a;overflow:hidden;width:100%;aspect-ratio:9/16;border:1px solid rgba(37,38,38,.12);box-shadow:0 22px 52px rgba(28,35,43,.16)}.video-frame video{display:block;width:100%;height:100%;object-fit:contain;image-rendering:auto}.video-note{font-size:10px;color:var(--muted);margin-top:10px}.video-frame:after{content:"CODE → MOTION";position:absolute;left:12px;bottom:10px;color:rgba(255,255,255,.72);font-size:8px;letter-spacing:.16em}
     .gallery{padding-bottom:130px}.masonry{display:grid;grid-template-columns:repeat(12,1fr);gap:18px;align-items:start}.card{margin:0}.card img{object-fit:cover;filter:saturate(.78) contrast(.96)}.card figcaption{font-size:10px;color:var(--muted);margin-top:8px}.c1{grid-column:1/7}.c1 img{aspect-ratio:16/10}.c2{grid-column:8/13;margin-top:90px}.c2 img{aspect-ratio:1/1.15}.c4{grid-column:2/7;margin-top:28px}.c4 img{aspect-ratio:16/9}.gallery-note{grid-column:7/13;margin-top:34px;font:500 clamp(24px,3.5vw,42px)/1.5 var(--serif);letter-spacing:-.02em}
     .about{background:#e9e4dc}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:7vw;align-items:start}.about-photo img{aspect-ratio:3/2;object-fit:cover}.about-copy .kicker{font-size:10px;letter-spacing:.16em;color:var(--muted)}.about-copy h2{font:500 clamp(32px,5vw,58px)/1.25 var(--serif);margin:16px 0 24px;letter-spacing:-.03em}.about-copy p{font-size:14px;color:#555b58;max-width:38em}.about-meta{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:34px;padding-top:20px;border-top:1px solid var(--line)}.about-meta div{font-size:11px;color:var(--muted)}.about-meta b{display:block;font:500 15px/1.5 var(--serif);color:var(--ink);margin-bottom:3px}
     .note-strip{padding:92px 0}.note-box{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:38px 0}.note-box h2{font:500 clamp(28px,4vw,46px)/1.35 var(--serif);margin:0}.note-box p{font-size:13px;color:var(--muted);max-width:42em;margin:12px 0 0}.arrow-link{white-space:nowrap;text-decoration:none;font-size:12px;border-bottom:1px solid;padding-bottom:3px}
     .final{padding:120px 0 90px}.final-inner{position:relative;padding:64px 0 0;border-top:1px solid var(--line)}.final-label{font-size:10px;letter-spacing:.18em;color:var(--muted)}.final h2{font:500 clamp(38px,6vw,78px)/1.18 var(--serif);letter-spacing:-.04em;margin:20px 0 26px;max-width:12ch}.final p{font-size:14px;color:var(--muted);max-width:40em}.offer{display:flex;gap:20px;flex-wrap:wrap;margin:28px 0 34px;font-size:11px}.offer span{border-left:1px solid var(--blue);padding-left:10px}.cta{display:inline-flex;align-items:center;justify-content:space-between;gap:32px;min-width:min(100%,360px);padding:17px 20px;text-decoration:none;background:var(--ink);color:var(--white);clip-path:polygon(0 0,94% 0,100% 28%,100% 100%,0 100%);font-size:13px;letter-spacing:.03em}.cta:after{content:"↗";font-size:17px}.smallnote{font-size:10px;color:var(--muted);margin-top:12px}footer{padding:20px 0 38px}.foot{border-top:1px solid var(--line);padding-top:16px;display:flex;justify-content:space-between;gap:20px;font-size:10px;color:var(--muted)}
     [data-reveal]{opacity:0;transform:translateY(20px);transition:opacity .75s ease,transform .75s cubic-bezier(.22,.61,.36,1)}[data-reveal].in{opacity:1;transform:none}
-    @media(max-width:760px){.wrap{width:min(100% - 28px,620px)}header{padding-top:18px}.hero{grid-template-columns:1fr;gap:42px;padding:34px 0 76px;min-height:auto}.hero h1{font-size:clamp(43px,13vw,68px);margin-top:17px;max-width:8.7ch}.lead{font-size:14px}.hero-visual{width:92%;margin-left:auto}.hero-caption{font-size:9px}.section-head{grid-template-columns:1fr;gap:4px}.section-no{padding-top:0}.section-head h2{max-width:10ch}.handoff-list{grid-template-columns:1fr}.handoff-item{grid-template-columns:32px 1fr}.motion-grid,.about-grid{grid-template-columns:1fr}.motion-grid{gap:34px}.motion-grid>div:last-child{max-width:320px}.motion-copy h2{max-width:9ch}.masonry{gap:12px}.c1{grid-column:1/10}.c2{grid-column:5/13;margin-top:38px}.c4{grid-column:1/9;margin-top:16px}.gallery-note{grid-column:1/13;margin-top:24px;font-size:25px}.about-photo{order:2}.about-meta{grid-template-columns:1fr}.note-box{grid-template-columns:1fr;align-items:start}.note-box .arrow-link{justify-self:start}.final h2{max-width:8ch}.foot{flex-direction:column;gap:4px}section{padding:84px 0}.gallery{padding-bottom:90px}.final{padding-top:90px}}
+    @media(max-width:760px){.wrap{width:min(100% - 28px,620px)}header{padding-top:18px}.hero{grid-template-columns:1fr;gap:42px;padding:34px 0 76px;min-height:auto}.hero h1{font-size:clamp(43px,13vw,68px);margin-top:17px;max-width:8.7ch}.lead{font-size:14px}.hero-visual{width:92%;margin-left:auto}.hero-caption{font-size:9px}.section-head{grid-template-columns:1fr;gap:4px}.section-no{padding-top:0}.section-head h2{max-width:10ch}.handoff-list{grid-template-columns:1fr}.handoff-item{grid-template-columns:32px 1fr}.motion-grid,.about-grid{grid-template-columns:1fr}.motion-grid{gap:34px}.motion-grid>div:last-child{max-width:220px}.motion-copy h2{max-width:9ch}.masonry{gap:12px}.c1{grid-column:1/10}.c2{grid-column:5/13;margin-top:38px}.c4{grid-column:1/9;margin-top:16px}.gallery-note{grid-column:1/13;margin-top:24px;font-size:25px}.about-photo{order:2}.about-meta{grid-template-columns:1fr}.note-box{grid-template-columns:1fr;align-items:start}.note-box .arrow-link{justify-self:start}.final h2{max-width:8ch}.foot{flex-direction:column;gap:4px}section{padding:84px 0}.gallery{padding-bottom:90px}.final{padding-top:90px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}[data-reveal]{opacity:1;transform:none;transition:none}.video-frame video{display:none}.video-frame{aspect-ratio:9/16;background:#1d1d1d}}
   </style>
 </head>
 <body>
+<canvas id="watercolorFx" aria-hidden="true"></canvas>
 <header><div class="wrap head"><div class="brand">MUTSUMI</div><a href="https://note.com/mutsumi_lab_jp" target="_blank" rel="noopener">noteを読む ↗</a></div></header>
 <main>
   <section class="hero wrap">
@@ -92,12 +95,117 @@
 <script>
 (() => {
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   const nodes = document.querySelectorAll('[data-reveal]');
-  if (reduce || !('IntersectionObserver' in window)) { nodes.forEach(n => n.classList.add('in')); return; }
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-  }, { threshold: .12, rootMargin: '0px 0px -6% 0px' });
-  nodes.forEach(n => io.observe(n));
+  if (reduce || !('IntersectionObserver' in window)) {
+    nodes.forEach(n => n.classList.add('in'));
+  } else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: .12, rootMargin: '0px 0px -6% 0px' });
+    nodes.forEach(n => io.observe(n));
+  }
+
+  const canvas = document.getElementById('watercolorFx');
+  if (!canvas || reduce) return;
+
+  const ctx = canvas.getContext('2d', { alpha: true });
+  const finePointer = window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+  const palette = [
+    [98,124,145],
+    [132,153,168],
+    [170,182,187],
+    [176,160,138]
+  ];
+  let w = 0, h = 0, scale = 1;
+  let timer = 0;
+  let lastX = -999, lastY = -999;
+
+  function resize() {
+    w = window.innerWidth;
+    h = window.innerHeight;
+    scale = Math.min(window.devicePixelRatio || 1, 1.5) * .5;
+    canvas.width = Math.max(1, Math.floor(w * scale));
+    canvas.height = Math.max(1, Math.floor(h * scale));
+    canvas.style.width = w + 'px';
+    canvas.style.height = h + 'px';
+    ctx.setTransform(scale,0,0,scale,0,0);
+    ctx.clearRect(0,0,w,h);
+    seed();
+  }
+
+  function blot(x, y, radius, strength = 1) {
+    const base = palette[Math.floor(Math.random() * palette.length)];
+    ctx.save();
+    ctx.globalCompositeOperation = 'multiply';
+    for (let i = 0; i < 14; i++) {
+      const a = Math.random() * Math.PI * 2;
+      const d = radius * Math.random() * .38;
+      const rx = radius * (.36 + Math.random() * .58);
+      const ry = rx * (.62 + Math.random() * .72);
+      const cx = x + Math.cos(a) * d;
+      const cy = y + Math.sin(a) * d;
+      const g = ctx.createRadialGradient(cx, cy, 0, cx, cy, Math.max(rx,ry));
+      const alpha = (.011 + Math.random() * .016) * strength;
+      g.addColorStop(0, `rgba(${base[0]},${base[1]},${base[2]},${alpha * 1.55})`);
+      g.addColorStop(.58, `rgba(${base[0]},${base[1]},${base[2]},${alpha})`);
+      g.addColorStop(1, `rgba(${base[0]},${base[1]},${base[2]},0)`);
+      ctx.fillStyle = g;
+      ctx.beginPath();
+      ctx.ellipse(cx, cy, rx, ry, a, 0, Math.PI * 2);
+      ctx.fill();
+    }
+    ctx.restore();
+  }
+
+  function seed() {
+    blot(w * .08, h * .12, Math.min(w,h) * .22, .9);
+    blot(w * .92, h * .42, Math.min(w,h) * .18, .75);
+    blot(w * .28, h * .9, Math.min(w,h) * .16, .6);
+  }
+
+  function autoDrop() {
+    if (!document.hidden) {
+      const edge = Math.random();
+      const x = edge < .5 ? Math.random() * w : (Math.random() < .5 ? w * (.78 + Math.random() * .22) : w * Math.random());
+      const y = Math.random() * h;
+      blot(x, y, 70 + Math.random() * 115, .7);
+    }
+    timer = window.setTimeout(autoDrop, 2600 + Math.random() * 1600);
+  }
+
+  if (finePointer) {
+    window.addEventListener('pointermove', (e) => {
+      const dx = e.clientX - lastX;
+      const dy = e.clientY - lastY;
+      if (dx * dx + dy * dy < 90 * 90) return;
+      lastX = e.clientX;
+      lastY = e.clientY;
+      blot(e.clientX, e.clientY, 46 + Math.random() * 34, .58);
+    }, { passive:true });
+
+    window.addEventListener('click', (e) => {
+      blot(e.clientX, e.clientY, 100 + Math.random() * 45, .95);
+    }, { passive:true });
+  }
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      clearTimeout(timer);
+    } else {
+      clearTimeout(timer);
+      timer = window.setTimeout(autoDrop, 900);
+    }
+  });
+
+  window.addEventListener('resize', resize, { passive:true });
+  resize();
+  timer = window.setTimeout(autoDrop, 1800);
 })();
 </script>
 </body>
